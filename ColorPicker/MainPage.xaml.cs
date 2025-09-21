@@ -32,7 +32,15 @@
         {
             var random = new Random();
 
-            var color = Color.FromRgb(random.Next(0, 255), random.Next(0, 255), random.Next(0, 255));
+            var red = random.Next(0, 255);
+            var green = random.Next(0, 255);
+            var blue = random.Next(0, 255);
+
+            rValue.Value = (double)red / 255;
+            gValue.Value = (double)green / 255;
+            bValue.Value = (double)blue / 255;
+
+            var color = Color.FromRgb(red, green, blue);
             
             SetBackgroundColor(color);
         }

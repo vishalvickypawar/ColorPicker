@@ -5,7 +5,7 @@
 
     <Grid x:Name="AppBackground">
 
-        <Frame Margin="10,10,10,0" VerticalOptions="Center">
+        <Border x:Name="BorderContent" Margin="10,10,10,0" VerticalOptions="Center" Padding="20,20,20,20" BackgroundColor="#80000000" StrokeShape="RoundRectangle 10,10,10,10">
 
             <VerticalStackLayout VerticalOptions="Center" Spacing="20">
 
@@ -23,7 +23,7 @@
 
                 <Button Text="Generate Random Color" Clicked="Button_Clicked"></Button>
 
-                <Frame HorizontalOptions="Center">
+                <Border HorizontalOptions="Center" Padding="10,10,10,10" StrokeShape="RoundRectangle 10,10,10,10">
 
                     <HorizontalStackLayout>
 
@@ -33,13 +33,13 @@
 
                     </HorizontalStackLayout>
 
-                </Frame>
+                </Border>
                 
                 <Label x:Name="lblInfo" HorizontalOptions="Center"></Label>
 
             </VerticalStackLayout>
             
-        </Frame>
+        </Border>
         
     </Grid>
 
